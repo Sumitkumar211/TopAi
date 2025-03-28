@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <!-- Button for Screen Reading (TTS) -->
+        <Button
+            android:id="@+id/btnSpeak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Speak Text" />
+        
+        <!-- Button for Image Recognition -->
+        <Button
+            android:id="@+id/btnProcessImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Process Image"
+            android:layout_marginTop="8dp"/>
+        
+        <!-- ImageView for displaying sample image -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerInside"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/sample_image" />
+
+        <!-- EditText for Web Search / Chatbot input -->
+        <EditText
+            android:id="@+id/editTextChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your query"
+            android:layout_marginTop="8dp" />
+        
+        <!-- Button for Chatbot/Web Search -->
+        <Button
+            android:id="@+id/btnSendChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:layout_marginTop="8dp"/>
+        
+        <!-- TextView for displaying Chatbot response -->
+        <TextView
+            android:id="@+id/textViewChatResponse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chatbot response will appear here"
+            android:layout_marginTop="8dp" />
+        
+    </LinearLayout>
+</ScrollView>
